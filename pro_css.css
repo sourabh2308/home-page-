@@ -1,0 +1,320 @@
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variable */
+:root{
+    --nav_height:50px;
+}
+
+
+/* navbar design */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+    position: sticky;
+   
+
+}
+nav h2{
+    color: aquamarine;
+}
+/* for logo */
+#logo{
+    margin: 4px 10px;
+    display: flex;
+    font-size: larger;
+    color: aquamarine;
+   
+}
+#logo img{
+    height: 60px;
+    width: 60;
+    border-radius: 50px;
+    align-items:center ;
+}
+#navbar::before{
+
+    content: "";
+    background-color:black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.75;
+    border: 1px solid darkkhaki;
+  
+    
+}
+/* nav list  */
+
+#navbar ul {
+    display: flex;
+   
+}
+
+#navbar ul li {
+    display: flex;
+   list-style: none;
+   font-size: 20px;
+   text-align: left;
+}
+
+#navbar ul li a{
+   display: block;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#navbar ul li a:hover{
+    color: brown;
+    background-color: white;
+    border-radius: 15px;
+    font-size: large;
+    
+ }
+ 
+
+ /* home section */
+
+ #home-content{
+    display: flex;
+    flex-direction: row;
+    padding:1px 100px;
+    /* justify-content: center; */
+    align-items: center;
+    height: 600px;
+    
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: rgb(249, 242, 239);
+   
+ }
+ #home-content img{
+    height: 420px;
+    opacity: 0.85;
+
+ }
+
+ #home-content::before{
+    
+    content: "";
+    
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.78 ;
+    
+ }
+
+
+
+
+
+ 
+
+
+
+/* contact section */
+
+#register{
+    position:relative;
+    /* background-color: rgb(193, 206, 211); */
+    background:url('img.jpg') no-repeat center center/cover;
+    /* z-index: -1; */
+    opacity:0.88 ;
+   
+   
+    
+  
+}
+#register::before{
+    
+    content: "";
+    
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.78 ;
+    
+ }
+
+ #register-box form{
+    width: 40%;
+ }
+ #register-box label{
+   font-size: 1.3rem;
+   font-family: cursive;
+   margin: 15px;
+   
+  
+   
+ }
+
+
+
+ #register-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 34px;
+color: rgb(16, 15, 15);
+
+ }
+ #register-box img{
+   
+    margin-left: 200px;
+    border-radius:30px;
+    height: 350px;
+    width: 600px;
+    opacity:0.48 ;
+    
+     }
+
+
+
+
+ #register-box input,
+ #register-box textarea{
+padding: 0.5rem;
+width: 80%;
+border-radius: 10px;
+font-size: 1.1rem;
+margin: 15px;
+margin-right: 1px;
+
+
+
+
+ }
+
+
+
+.form-group1{
+
+background-color: white;
+    border-radius: 20px;
+    
+     opacity:0.8 ;
+  
+    
+}
+
+/* another class */
+ .h-primary{
+    font-size: 2.3rem;
+    padding: 10px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+.h2-secondary{
+    font-size: 2.3rem;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(238, 149, 149);
+
+
+}
+
+.p-secondary{
+    font-size: 1.5rem;
+    color: rgb(245, 238, 239);
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 6px rgb(241, 244, 39);
+
+
+
+}
+.p-primary{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+}
+.p-primary2{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+ 
+    text-align: center; 
+    font-family:  'Arial Narrow', Arial, sans-serif;
+}
+.center{
+    text-align: center;
+}
+
+.btn{
+    padding: 6px 20px;
+    background-color: rgb(92, 92, 236);
+    border: 2px solid rgb(65, 16, 242);
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px;
+    margin-left: 250px;
+    
+}
+.btn:hover{
+    /* font-size: large; */
+    background-color: aqua;
+}
+
+
+.home-btn {
+    padding: 10px 20px;
+    background-color:white;
+    border: 2px solid green;
+   
+    cursor: pointer;
+    font-size: large;
+    margin-left: 210px;
+    color: green;
+    text-decoration:none;
+    
+}
+
+.home-btn:hover{
+     font-size: large; 
+    background-color: green;
+color: white;
+}
+
+footer{
+    background-color: rgba(220, 255, 255, 0.952);
+    color: white;
+    padding: 12px 20px;
+    position:sticky;
+    color:black;
+}
